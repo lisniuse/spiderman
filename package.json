@@ -1,0 +1,24 @@
+{
+  "name": "spiderman",
+  "version": "1.0.0",
+  "description": "spiderman.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisniuse/spiderman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisniuse/spiderman/issues"
+  },
+  "homepage": "https://github.com/lisniuse/spiderman#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "flyio": "^0.6.14",
+    "fs-extra": "^8.0.1"
+  }
+}
