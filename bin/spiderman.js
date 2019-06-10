@@ -1,19 +1,12 @@
-const path = require('path');
+const config = require('../lib/config/load')();
+const Spiderman = require('../lib/class/Spiderman');
 
-const fs = require('fs-extra');
-const fly = require('flyio');
-const chalk = require('chalk');
+(async function main() {
 
-const cdir = path.resolve('.');
-const configFilename = 'spiderman.config.js';
-const configTargetPath = path.join(cdir, configFilename);
-const configDefaultPath = path.join(__dirname, '../lib/config/default.js');
+  let spiderman = new Spiderman({
+    config
+  });
 
-if (!fs.existsSync(configTargetPath)) {
-  console.log(chalk.red('[ERROR] No configuration file found.'));
-  process.exit();
-}
+  await spiderman.start();
 
-let config = require(configDefaultPath)();
-require(configTargetPath)(config);
-console.log(config);
+})();
