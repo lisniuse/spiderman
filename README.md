@@ -1,4 +1,3 @@
 # spiderman
 
-spiderman.js
-
+蜘蛛侠爬虫工具。
