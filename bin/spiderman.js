@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const config = require('../lib/config/load')();
 const Spiderman = require('../lib/class/Spiderman');
 
@@ -6,7 +8,9 @@ const Spiderman = require('../lib/class/Spiderman');
   let spiderman = new Spiderman({
     config,
     urlCallback: function(url) {
-      console.log('request:', url);
+      if (config.printUrl === true) {
+        console.log('request:', url);
+      }
     }
   });
 
