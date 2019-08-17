@@ -1,6 +1,6 @@
 {
   "name": "spiderman-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A crawler tool based on nodejs.",
   "main": "index.js",
   "scripts": {
