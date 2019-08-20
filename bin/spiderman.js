@@ -8,7 +8,7 @@ const Spiderman = require('../lib/class/Spiderman');
   let spiderman = new Spiderman({
     config: conf,
     urlCallback: function(url) {
-      if (config.printUrl === true) {
+      if (conf.printUrl === true) {
         console.log('request:', url);
       }
     }
